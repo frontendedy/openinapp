@@ -1,11 +1,11 @@
 import express from "express";
 import cors from "cors"
 import redirect  from "../redirect.controller.js";
+import bodyParser from "body-parser";
 
 const app = express();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json()); app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
     origin: ['http://localhost:3000', 'https://www.dineo.in', 'https://dineo.in'], // Add all allowed origins here
