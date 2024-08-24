@@ -19,3 +19,5 @@ app.get("/greet", (req, res)=>(res.send("hello world")))
 
 const port = process.env.PORT || 5600
 app.listen((port), () => console.log(`server started on PORT ${port}`))
+
+export default app;
