@@ -1,7 +1,8 @@
-import express from "express";
-import cors from "cors"
-import redirect  from "./redirect.controller.js";
-import bodyParser from "body-parser";
+
+const bodyParser = require('body-parser');
+const express = require('express');
+const cors = require('cors');
+const redirect = require("./redirect.controller.js")
 
 const app = express();
 
@@ -20,4 +21,4 @@ app.get("/greet", (req, res)=>(res.send("hello world")))
 const port = process.env.PORT || 5600
 app.listen((port), () => console.log(`server started on PORT ${port}`))
 
-export default app;
+module.exports = app;
