@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors"
-import redirect  from "../redirect.controller.js";
+import redirect  from "./redirect.controller.js";
 import bodyParser from "body-parser";
 
 const app = express();
